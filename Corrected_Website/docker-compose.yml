@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  victim:
+    image: nginx:latest
+    ports:
+      - "8080:80"
+      - "8443:443"
+    volumes:
+      - <your_path>:/usr/share/nginx/html
+    
+    
